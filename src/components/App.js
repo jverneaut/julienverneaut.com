@@ -1,6 +1,8 @@
 import React from 'react';
 import { injectGlobal, ThemeProvider } from 'styled-components';
 
+import Hero from './Hero';
+
 const theme = {
   colors: {
     light: '#f7f8fb',
@@ -20,7 +22,7 @@ injectGlobal`
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <div>Julien Verneaut pour vous servir</div>
+    <Hero />
   </ThemeProvider>
 );
 
