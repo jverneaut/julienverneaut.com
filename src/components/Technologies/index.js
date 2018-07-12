@@ -12,6 +12,12 @@ const TechnologiesContainer = styled.div`
   margin: 0 auto;
   padding: 0 24px;
   position: relative;
+  margin-top: 16px;
+  line-height: 1em;
+`;
+
+const TechnologiesTitle = styled.h2`
+  margin-bottom: 16px;
 `;
 
 const TechnologiesGroup = styled.div`
@@ -71,7 +77,7 @@ const DashedLineHorizontal = styled.svg`
   right: 0;
   width: calc(100% - 48px);
   height: 2px;
-  top: 24px;
+  top: calc(24px + 1em + 16px);
   z-index: -1;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     display: none;
@@ -89,10 +95,10 @@ const DashedLineHorizontalPath = styled.line`
 const DashedLineVertical = styled.svg`
   position: absolute;
   left: 24px;
-  top: 0;
+  top: calc(1em + 16px);
   left: 50%;
   right: 0;
-  height: 100%;
+  height: calc(100% - 1em - 16px);
   width: 2px;
   z-index: -1;
   display: none;
@@ -111,6 +117,9 @@ const DashedLineVerticalPath = styled.line`
 
 const Technologies = () => (
   <TechnologiesContainer>
+    <TechnologiesTitle>
+      Mes technologies préférées :
+    </TechnologiesTitle>
     <TechnologiesGroup>
       <Technology href="https://reactjs.org/">
         <TechnologyImg src={ReactImg} alt="" />
