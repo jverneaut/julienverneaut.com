@@ -1,6 +1,7 @@
 import React from 'react';
 import { injectGlobal, ThemeProvider } from 'styled-components';
 
+import Header from './Header';
 import Hero from './Hero';
 
 const theme = {
@@ -27,7 +28,10 @@ injectGlobal`
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Hero />
+    <div>
+      <Header />
+      <Hero />
+    </div>
   </ThemeProvider>
 );
 

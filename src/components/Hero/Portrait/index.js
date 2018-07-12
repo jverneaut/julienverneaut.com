@@ -8,6 +8,12 @@ const PortraitContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    padding: 64px 0;
+  }
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
+    padding: 32px 0;
+  }
 `;
 
 const PortraitImgContainer = styled.div`
@@ -26,6 +32,13 @@ const PortraitImgContainer = styled.div`
     z-index: -1;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
   }
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
+    position: initial;
+    margin-left: 16px;
+    &::after {
+      display: none;
+    }
+  }
 `;
 
 const PortraitImgComponent = styled.img`
@@ -33,6 +46,10 @@ const PortraitImgComponent = styled.img`
   width: 192px;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
+    box-shadow: unset;
+    border-radius: 4px;
+  }
 `;
 
 const rotate360 = keyframes`
@@ -51,6 +68,12 @@ const PortraitImgBackground = styled.img`
   top: -100px;
   left: -125px;
   animation: ${rotate360} 60s linear infinite;
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
+    top: unset;
+    left: unset;
+    top: 16px;
+    left: -320px;
+  }
 `;
 
 const Portrait = () => (

@@ -6,11 +6,14 @@ import Portrait from './Portrait';
 const HeroContainer = styled.div`
   max-width: 960px;
   margin: 0 auto;
-  padding: 160px 24px;
+  padding: 144px 24px;
   display: flex;
   align-items: center;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     flex-direction: column-reverse;
+    padding: 32px 24px;
+  }
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
     padding: 32px 24px;
     align-items: flex-start;
   }
