@@ -125,15 +125,15 @@ const Technologies = () => (
         <TechnologyImg src={ReactImg} alt="" />
         <TechnologyName>React</TechnologyName>
       </Technology>
-      <Technology href="https://reactjs.org/">
+      <Technology href="https://nodejs.org/">
         <TechnologyImg src={NodeImg} alt="" />
         <TechnologyName>Node</TechnologyName>
       </Technology>
-      <Technology href="https://reactjs.org/">
+      <Technology href="http://expressjs.com/">
         <TechnologyImg src={ExpressImg} alt="" />
         <TechnologyName>Express</TechnologyName>
       </Technology>
-      <Technology href="https://reactjs.org/">
+      <Technology href="https://www.mongodb.com/">
         <TechnologyImg src={MongoImg} alt="" />
         <TechnologyName>MongoDb</TechnologyName>
       </Technology>
