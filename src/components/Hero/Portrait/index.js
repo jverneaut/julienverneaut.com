@@ -30,7 +30,7 @@ const PortraitImgContainer = styled.div`
     right: -8px;
     border-radius: 8px;
     z-index: -1;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   }
   @media (max-width: ${props => props.theme.breakpoints.small}) {
     position: initial;
@@ -45,7 +45,7 @@ const PortraitImgComponent = styled.img`
   vertical-align: middle;
   width: 192px;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   @media (max-width: ${props => props.theme.breakpoints.small}) {
     box-shadow: unset;
     border-radius: 4px;

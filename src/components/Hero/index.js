@@ -65,7 +65,7 @@ const ContactBtn = styled.a`
   display: inline-block;
   border-radius: 4px;
   margin-top: 32px;
-  box-shadow: 0 4px 16px rgba(10, 29, 66, 0.12);
+  box-shadow: 0 4px 16px rgba(10, 29, 66, 0.08);
   transition: 0.3s all;
   text-transform: uppercase;
   font-size: 16px;
