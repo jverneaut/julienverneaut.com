@@ -118,7 +118,7 @@ class Hero extends Component {
               Je m'appelle Julien Verneaut et je suis un développeur basé à Strasbourg spécialisé dans le web.
             </DescritpionParagraph>
             <DescritpionParagraph>
-              Grâce à mes compétences en programmation ainsi qu'en design, accélérez le lancement de votre produit sur le marché.
+              Grâce à mes compétences en programmation et en design, accélérez le lancement de votre produit sur le marché.
               {/* Grâce à mes compétences en développement ainsi qu'en design, lancez rapidement votre projet.
               Je me situe entre le design, le développement et le marketing pour porter votre projet vers l'avenir. */}
             </DescritpionParagraph>
