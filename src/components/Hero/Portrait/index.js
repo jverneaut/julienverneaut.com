@@ -71,8 +71,8 @@ const PortraitImgBackground = styled.img`
   @media (max-width: ${props => props.theme.breakpoints.small}) {
     top: unset;
     left: unset;
-    top: 16px;
-    left: -320px;
+    top: -140px;
+    left: -290px;
   }
 `;
 
