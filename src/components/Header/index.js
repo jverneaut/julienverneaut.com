@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const HeaderContainer = styled.div`
   max-width: 960px;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 24px;
   padding: 0 24px;
   display: flex;
 `;
