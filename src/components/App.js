@@ -3,6 +3,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components';
 
 import Header from './Header';
 import Hero from './Hero';
+import Technologies from './Technologies';
 
 const theme = {
   colors: {
@@ -31,6 +32,7 @@ const App = () => (
     <div>
       <Header />
       <Hero />
+      <Technologies />
     </div>
   </ThemeProvider>
 );
