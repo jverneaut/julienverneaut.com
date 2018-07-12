@@ -17,6 +17,7 @@ injectGlobal`
     font-family: Lato;
     font-size: 18px;
     color: ${theme.colors.dark};
+    overflow-x: hidden;
   }
 `;
 
