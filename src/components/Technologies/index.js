@@ -16,6 +16,9 @@ const TechnologiesContainer = styled.div`
 
 const TechnologiesGroup = styled.div`
   display: flex;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    flex-direction: column;
+  }
 `;
 
 const Technology = styled.a`
@@ -33,12 +36,24 @@ const Technology = styled.a`
   &:last-child {
     margin-right: 0;
   }
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    margin-right: 0;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 const TechnologyImg = styled.img`
   max-height: 32px;
   max-width: 56px;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    max-width: unset;
+    height: 32px;
+  }
 `;
+
 const TechnologyName = styled.span`
   margin-left: 16px;
   color: ${props => props.theme.colors.dark};
@@ -50,7 +65,7 @@ const dash = keyframes`
   }
 `;
 
-const DashedLine = styled.svg`
+const DashedLineHorizontal = styled.svg`
   position: absolute;
   left: 24px;
   right: 0;
@@ -58,9 +73,35 @@ const DashedLine = styled.svg`
   height: 2px;
   top: 24px;
   z-index: -1;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    display: none;
+  }
 `;
 
-const DashedLinePath = styled.line`
+const DashedLineHorizontalPath = styled.line`
+  stroke: ${props => props.theme.colors.dark};
+  stroke-width: 2;
+  opacity: 0.12;
+  stroke-dasharray: 4;
+  animation: ${dash} 20s linear infinite;
+`;
+
+const DashedLineVertical = styled.svg`
+  position: absolute;
+  left: 24px;
+  top: 0;
+  left: 50%;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  z-index: -1;
+  display: none;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    display: unset;
+  }
+`;
+
+const DashedLineVerticalPath = styled.line`
   stroke: ${props => props.theme.colors.dark};
   stroke-width: 2;
   opacity: 0.12;
@@ -88,9 +129,12 @@ const Technologies = () => (
         <TechnologyName>MongoDb</TechnologyName>
       </Technology>
     </TechnologiesGroup>
-    <DashedLine>
-      <DashedLinePath x1="0" y1="1" x2="100%" y2="1" />
-    </DashedLine>
+    <DashedLineHorizontal>
+      <DashedLineHorizontalPath x1="0" y1="1" x2="100%" y2="1" />
+    </DashedLineHorizontal>
+    <DashedLineVertical>
+      <DashedLineVerticalPath x1="1" y1="0" x2="1" y2="100%" />
+    </DashedLineVertical>
   </TechnologiesContainer>
 );
 
