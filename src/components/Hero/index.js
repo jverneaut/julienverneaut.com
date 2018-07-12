@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import ContactForm from './ContactForm';
 import Portrait from './Portrait';
 
 const HeroContainer = styled.div`
@@ -57,6 +58,7 @@ const DescritpionParagraph = styled.p`
 `;
 
 const ContactBtn = styled.a`
+  cursor: pointer;
   text-decoration: none;
   background-color: ${props => props.light ? 'white' : props.theme.colors.primary};
   color: ${props => props.light ? props.theme.colors.dark : 'white'};
@@ -88,29 +90,51 @@ const ContactBtnIcon = styled.i`
   font-size: 16px;
 `;
 
-const Hero = () => (
-  <HeroContainer>
-    <HeroContent>
-      <Title>Construisons de belles choses ensemble</Title>
-      <Description>
-        <DescritpionParagraph>
-          Je m'appelle Julien Verneaut et je suis un développeur basé à Strasbourg spécialisé dans le web.
-        </DescritpionParagraph>
-        <DescritpionParagraph>
-          Je me situe entre le design, le développement et le marketing pour porter votre projet vers l'avenir.
-        </DescritpionParagraph>
-      </Description>
-      <ContactBtn href="/">
-        <ContactBtnIcon className="fas fa-envelope"></ContactBtnIcon>
-        Me contacter
-      </ContactBtn>
-      <ContactBtn light href="https://github.com/jverneaut">
-        <ContactBtnIcon className="fab fa-github"></ContactBtnIcon>
-        Voir mon github
-      </ContactBtn>
-    </HeroContent>
-    <Portrait />
-  </HeroContainer>
-);
+class Hero extends Component {
+  state = {
+    modalActive: false
+  };
+
+  displayModal = (e) => {
+    e.preventDefault();
+    this.setState({
+      modalActive: true
+    })
+  }
+
+  dismissModal = (e) => {
+    this.setState({
+      modalActive: false
+    })
+  }
+
+  render() {
+    return (
+      <HeroContainer>
+        <HeroContent>
+          <Title>Construisons de belles choses ensemble</Title>
+          <Description>
+            <DescritpionParagraph>
+              Je m'appelle Julien Verneaut et je suis un développeur basé à Strasbourg spécialisé dans le web.
+            </DescritpionParagraph>
+            <DescritpionParagraph>
+              Je me situe entre le design, le développement et le marketing pour porter votre projet vers l'avenir.
+            </DescritpionParagraph>
+          </Description>
+          <ContactBtn onClick={this.displayModal}>
+            <ContactBtnIcon className="fas fa-envelope"></ContactBtnIcon>
+            Me contacter
+            </ContactBtn>
+          <ContactBtn light href="https://github.com/jverneaut">
+            <ContactBtnIcon className="fab fa-github"></ContactBtnIcon>
+            Voir mon github
+            </ContactBtn>
+        </HeroContent>
+        <Portrait />
+        {this.state.modalActive && <ContactForm dismissModal={this.dismissModal} />}
+      </HeroContainer>
+    )
+  }
+}
 
 export default Hero;
