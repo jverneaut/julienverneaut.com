@@ -9,21 +9,35 @@ const HeroContainer = styled.div`
   padding: 160px 24px;
   display: flex;
   align-items: center;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    flex-direction: column-reverse;
+    padding: 32px 24px;
+    align-items: flex-start;
+  }
 `;
 
 const HeroContent = styled.div`
   flex: 2;
   margin-right: 16px;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    margin-right: 0;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 2em;
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    margin-top: 32px;
+  }
 `;
 
 const Description = styled.div`
   display: flex;
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
+    flex-direction: column;
+  }
 `;
 
 const DescritpionParagraph = styled.p`
@@ -31,8 +45,13 @@ const DescritpionParagraph = styled.p`
   margin-right: 16px;
   line-height: 1.5;
   opacity: 0.7;
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;
-
 
 const ContactBtn = styled.a`
   text-decoration: none;
@@ -40,7 +59,7 @@ const ContactBtn = styled.a`
   color: ${props => props.light ? props.theme.colors.dark : 'white'};
   padding: 16px 24px;
   margin-right: 16px;
-  float: left;
+  display: inline-block;
   border-radius: 4px;
   margin-top: 32px;
   box-shadow: 0 4px 16px rgba(10, 29, 66, 0.12);
@@ -50,6 +69,14 @@ const ContactBtn = styled.a`
   &:hover {
     color: ${props => props.light ? 'white' : props.theme.colors.primary};
     background-color: ${props => props.light ? props.theme.colors.dark : 'white'};
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+  @media (max-width: ${props => props.theme.breakpoints.small}) {
+    &:last-of-type {
+      margin-top: 16px;
+    }
   }
 `;
 

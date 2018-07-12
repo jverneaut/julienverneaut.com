@@ -8,6 +8,10 @@ const theme = {
     light: '#f7f8fb',
     dark: '#0a1d42',
     primary: '#6d91ff'
+  },
+  breakpoints: {
+    small: '500px',
+    medium: '800px'
   }
 }
 
