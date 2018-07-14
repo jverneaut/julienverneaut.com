@@ -71,14 +71,25 @@ const dash = keyframes`
   }
 `;
 
+
+const dashAnimHorizontal = keyframes`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(8px);
+  }
+`;
+
 const DashedLineHorizontal = styled.svg`
   position: absolute;
   left: 24px;
   right: 0;
-  width: calc(100% - 48px);
+  width: calc(100% - 48px - 8px);
   height: 2px;
   top: calc(24px + 1em + 16px);
   z-index: -1;
+  animation: ${dashAnimHorizontal} 0.5s linear infinite;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     display: none;
   }
@@ -86,10 +97,18 @@ const DashedLineHorizontal = styled.svg`
 
 const DashedLineHorizontalPath = styled.line`
   stroke: ${props => props.theme.colors.dark};
-  stroke-width: 2;
+  stroke-width: 2px;
   opacity: 0.12;
-  stroke-dasharray: 4;
-  animation: ${dash} 20s linear infinite;
+  stroke-dasharray: 4px;
+`;
+
+const dashAnimVertical = keyframes`
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(8px);
+  }
 `;
 
 const DashedLineVertical = styled.svg`
@@ -98,10 +117,11 @@ const DashedLineVertical = styled.svg`
   top: calc(1em + 16px);
   left: 50%;
   right: 0;
-  height: calc(100% - 1em - 16px);
+  height: calc(100% - 1em - 16px - 8px);
   width: 2px;
   z-index: -1;
   display: none;
+  animation: ${dashAnimVertical} 10s linear infinite;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     display: unset;
   }
@@ -109,9 +129,9 @@ const DashedLineVertical = styled.svg`
 
 const DashedLineVerticalPath = styled.line`
   stroke: ${props => props.theme.colors.dark};
-  stroke-width: 2;
+  stroke-width: 2px;
   opacity: 0.12;
-  stroke-dasharray: 4;
+  stroke-dasharray: 4px;
   animation: ${dash} 20s linear infinite;
 `;
 
