@@ -92,6 +92,7 @@ const Skills = () => (
           <Skill>Scikit Learn</Skill>
           <Skill>Matplotlib</Skill>
           <Skill>Beatiful Soup</Skill>
+          <Skill>Jupyter</Skill>
         </SkillCategory>
       </Column>
       <Column>
@@ -102,7 +103,8 @@ const Skills = () => (
           <Skill>Mailchimp</Skill>
         </SkillCategory>
         <SkillCategory>
-          <SkillCategoryTitle>Autre</SkillCategoryTitle>
+          <SkillCategoryTitle>Petits +</SkillCategoryTitle>
+          <Skill>VBA</Skill>
           <Skill>OpenCv</Skill>
           <Skill>git</Skill>
           <Skill>Electron</Skill>
