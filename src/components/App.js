@@ -18,6 +18,11 @@ const theme = {
 }
 
 injectGlobal`
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   body {
     background: #f7f8fb;
     font-family: Lato;
