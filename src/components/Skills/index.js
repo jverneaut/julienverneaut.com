@@ -2,16 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 32px 24px;
-  width: 100%;
 `;
 
-const SkillsRow = styled.div`
+const ColumnSmall = styled.div`
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     float: left;
     width: 50%;
+  }
+`;
+
+const ColumnLarge = styled.div`
+  width: 25%;
+  float: left;
+  @media (max-width: ${props => props.theme.breakpoints.medium}) {
+    width: 100%;
+    float: unset;
   }
 `;
 
@@ -31,19 +40,11 @@ const Skill = styled.li`
   margin-top: 16px;
 `;
 
-const Column = styled.div`
-  width: 25%;
-  float: left;
-  @media (max-width: ${props => props.theme.breakpoints.medium}) {
-    width: 100%;
-    float: unset;
-  }
-`;
 
 const Skills = () => (
   <SkillsContainer>
-    <SkillsRow>
-      <Column>
+    <ColumnSmall>
+      <ColumnLarge>
         <SkillCategory>
           <SkillCategoryTitle>Frontend</SkillCategoryTitle>
           <Skill>html/css</Skill>
@@ -60,8 +61,8 @@ const Skills = () => (
           <Skill>bem</Skill>
           <Skill>Wordpress</Skill>
         </SkillCategory>
-      </Column>
-      <Column>
+      </ColumnLarge>
+      <ColumnLarge>
         <SkillCategory>
           <SkillCategoryTitle>Backend</SkillCategoryTitle>
           <Skill>Node.js</Skill>
@@ -76,10 +77,10 @@ const Skills = () => (
           <Skill>React Native</Skill>
           <Skill>Corona SDK</Skill>
         </SkillCategory>
-      </Column>
-    </SkillsRow>
-    <SkillsRow>
-      <Column>
+      </ColumnLarge>
+    </ColumnSmall>
+    <ColumnSmall>
+      <ColumnLarge>
         <SkillCategory>
           <SkillCategoryTitle>Design</SkillCategoryTitle>
           <Skill>Photoshop/Affinity</Skill>
@@ -94,8 +95,8 @@ const Skills = () => (
           <Skill>Beatiful Soup</Skill>
           <Skill>Jupyter</Skill>
         </SkillCategory>
-      </Column>
-      <Column>
+      </ColumnLarge>
+      <ColumnLarge>
         <SkillCategory>
           <SkillCategoryTitle>Marketing</SkillCategoryTitle>
           <Skill>Buffer</Skill>
@@ -110,8 +111,8 @@ const Skills = () => (
           <Skill>Electron</Skill>
           <Skill>ssh</Skill>
         </SkillCategory>
-      </Column>
-    </SkillsRow>
+      </ColumnLarge>
+    </ColumnSmall>
   </SkillsContainer>
 );
 
