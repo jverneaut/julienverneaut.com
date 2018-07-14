@@ -80,6 +80,13 @@ const Spacer = styled.div`
   }
 `;
 
+const Emoji = styled.span.attrs({
+  role: 'img',
+})`
+  font-size: 0.5em;
+  vertical-align: top;
+`;
+
 const Header = () => (
   <HeaderContainer>
     <HeaderContent>
@@ -94,7 +101,9 @@ const Header = () => (
       <Tabs>
         <Tab>
           <TabLink href="https://medium.com/@jverneaut" target="_blank">
-            Blog
+            Blog{" "}
+            {// eslint-disable-next-line
+            }<Emoji aria-label="USA flag">🇺🇸</Emoji>
           </TabLink>
         </Tab>
         <Tab>
