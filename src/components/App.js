@@ -3,6 +3,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components';
 
 import Header from './Header';
 import Hero from './Hero';
+import Skills from './Skills';
 import Technologies from './Technologies';
 
 const theme = {
@@ -38,6 +39,7 @@ const App = () => (
       <Header />
       <Hero />
       <Technologies />
+      <Skills />
     </div>
   </ThemeProvider>
 );
