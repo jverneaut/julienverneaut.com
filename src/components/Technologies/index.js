@@ -138,7 +138,7 @@ const DashedLineVerticalPath = styled.line`
 const Technologies = () => (
   <TechnologiesContainer>
     <TechnologiesTitle>
-      Mes technologies préférées :
+      Mes technologies favorites :
     </TechnologiesTitle>
     <TechnologiesGroup>
       <Technology href="https://reactjs.org/">
