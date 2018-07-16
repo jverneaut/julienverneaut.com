@@ -87,7 +87,7 @@ const DashedLineHorizontal = styled.svg`
   right: 0;
   width: calc(100% - 48px - 8px);
   height: 2px;
-  top: calc(24px + 1em + 16px);
+  top: calc(24px + 1em + 24px);
   z-index: -1;
   animation: ${dashAnimHorizontal} 0.5s linear infinite;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
