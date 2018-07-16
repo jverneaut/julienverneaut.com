@@ -11,10 +11,15 @@ const ProjectsContainer = styled.div`
   padding: 0 24px;
 `;
 
+const ProjectsTitle = styled.h2`
+  margin-top: 80px;
+  margin-bottom: 32px;
+`;
+
 const Project = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 80px;
+  margin-bottom: 96px;
 `;
 
 const ProjectContent = styled.div`
@@ -55,6 +60,7 @@ const ProjectParagraph = styled.p`
 
 const Projects = () => (
   <ProjectsContainer>
+    <ProjectsTitle>Mes réalisations :</ProjectsTitle>
     <Project>
       <PhonePreview src={Karo} alt="" />
       <ProjectContent>
