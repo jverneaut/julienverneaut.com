@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
-  width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  margin-top: 32px;
   padding: 32px 24px;
 `;
 
