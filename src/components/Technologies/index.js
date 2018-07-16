@@ -17,7 +17,7 @@ const TechnologiesContainer = styled.div`
 `;
 
 const TechnologiesTitle = styled.h2`
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 `;
 
 const TechnologiesGroup = styled.div`
