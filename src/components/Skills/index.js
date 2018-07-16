@@ -8,6 +8,11 @@ const SkillsContainer = styled.div`
   padding: 32px 24px;
 `;
 
+const SkillsTitle = styled.h2`
+  margin-top: 32px;
+  margin-bottom: 32px;
+`;
+
 const ColumnSmall = styled.div`
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     float: left;
@@ -25,13 +30,13 @@ const ColumnLarge = styled.div`
 `;
 
 const SkillCategory = styled.ul`
-  margin-top: 56px;
+  margin-bottom: 56px;
 `;
 
 const SkillCategoryTitle = styled.li`
   color: ${props => props.theme.colors.dark};
   font-weight: bold;
-  margin: 24px 0;
+  margin-bottom: 24px;
 `;
 
 const Skill = styled.li`
@@ -43,6 +48,7 @@ const Skill = styled.li`
 
 const Skills = () => (
   <SkillsContainer>
+    <SkillsTitle>Mes compétences :</SkillsTitle>
     <ColumnSmall>
       <ColumnLarge>
         <SkillCategory>
@@ -104,7 +110,7 @@ const Skills = () => (
           <Skill>Mailchimp</Skill>
         </SkillCategory>
         <SkillCategory>
-          <SkillCategoryTitle>Petits +</SkillCategoryTitle>
+          <SkillCategoryTitle>Mes petits +</SkillCategoryTitle>
           <Skill>VBA</Skill>
           <Skill>OpenCv</Skill>
           <Skill>git</Skill>
