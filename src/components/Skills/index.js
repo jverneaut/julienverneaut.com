@@ -9,7 +9,6 @@ const SkillsContainer = styled.div`
 `;
 
 const SkillsTitle = styled.h2`
-  margin-top: 32px;
   margin-bottom: 32px;
 `;
 
