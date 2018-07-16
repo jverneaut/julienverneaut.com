@@ -21,7 +21,7 @@ const Project = styled.div`
   align-items: center;
   margin-bottom: 96px;
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 56px;
   }
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     flex-direction: column;
