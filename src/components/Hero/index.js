@@ -51,7 +51,8 @@ const DescritpionParagraph = styled.p`
   line-height: 1.5;
   opacity: 0.7;
   @media (max-width: ${props => props.theme.breakpoints.small}) {
-    margin-bottom: 8px;
+    margin-right: 0;
+    margin-bottom: 16px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -120,8 +121,6 @@ class Hero extends Component {
             </DescritpionParagraph>
             <DescritpionParagraph>
               Grâce à mes compétences en design et en programmation, accélérez le lancement de votre produit sur le marché.
-              {/* Grâce à mes compétences en développement ainsi qu'en design, lancez rapidement votre projet.
-              Je me situe entre le design, le développement et le marketing pour porter votre projet vers l'avenir. */}
             </DescritpionParagraph>
           </Description>
           <ContactBtn onClick={this.displayModal}>
