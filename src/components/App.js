@@ -4,6 +4,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components';
 import Header from './Header';
 import Hero from './Hero';
 import Projects from './Projects';
+import Services from './Services';
 import Skills from './Skills';
 import Technologies from './Technologies';
 
@@ -41,6 +42,7 @@ const App = () => (
       <Header />
       <Hero />
       <Technologies />
+      <Services />
       <Projects />
       <Skills />
     </div>
