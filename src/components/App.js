@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { injectGlobal, ThemeProvider } from 'styled-components';
+import ReactGA from 'react-ga';
 
 import ContactForm from './ContactForm';
 import Header from './Header';
@@ -8,6 +9,9 @@ import Projects from './Projects';
 import Services from './Services';
 import Skills from './Skills';
 import Technologies from './Technologies';
+
+ReactGA.initialize('UA-120978536-2');
+ReactGA.pageview('/');
 
 const theme = {
   colors: {
