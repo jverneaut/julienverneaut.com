@@ -114,10 +114,10 @@ const dashAnimVertical = keyframes`
 const DashedLineVertical = styled.svg`
   position: absolute;
   left: 24px;
-  top: calc(1em + 16px);
+  top: calc(1em + 24px);
   left: 50%;
   right: 0;
-  height: calc(100% - 1em - 16px - 8px);
+  height: calc(100% - 1em - 16px - 16px);
   width: 2px;
   z-index: -1;
   display: none;
