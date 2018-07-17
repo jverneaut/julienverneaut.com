@@ -120,7 +120,8 @@ class Hero extends Component {
               Mon nom est Julien Verneaut. Je créé des sites internet mais aussi des jeux et applications pour smartphone.
             </DescritpionParagraph>
             <DescritpionParagraph>
-              Du design à la programmation, je travaille avec vous pour réaliser vos projets les plus fous. ✨
+              Du design à la programmation, je travaille avec vous pour réaliser vos projets les plus fous.
+              {" "}<span role="img" aria-label="étincelles">✨</span>
             </DescritpionParagraph>
           </Description>
           <ContactBtn onClick={this.displayModal}>
