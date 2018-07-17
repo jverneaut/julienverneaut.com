@@ -117,10 +117,10 @@ class Hero extends Component {
           <Title>Construisons de belles choses ensemble</Title>
           <Description>
             <DescritpionParagraph>
-              Je m'appelle Julien Verneaut et je suis un développeur basé à Strasbourg spécialisé dans le web.
+              Mon nom est Julien Verneaut. Je créé des sites internet mais aussi des jeux et applications pour smartphone.
             </DescritpionParagraph>
             <DescritpionParagraph>
-              Grâce à mes compétences en design et en programmation, accélérez le lancement de votre produit sur le marché.
+              Du design à la programmation, je travaille avec vous pour réaliser vos projets les plus fous. ✨
             </DescritpionParagraph>
           </Description>
           <ContactBtn onClick={this.displayModal}>
