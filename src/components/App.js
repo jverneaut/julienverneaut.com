@@ -11,7 +11,8 @@ const theme = {
   colors: {
     light: '#f7f8fb',
     dark: '#0a1d42',
-    primary: '#6d91ff'
+    primary: '#6d91ff',
+    border: 'rgba(10, 29, 66, 0.06)'
   },
   breakpoints: {
     small: '500px',

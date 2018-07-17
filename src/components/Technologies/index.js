@@ -38,7 +38,7 @@ const Technology = styled.a`
   margin-right: 32px;
   padding: 8px 0;
   border-radius: 4px;
-  border: 1px solid rgba(10, 29, 66, 0.06);
+  border: 1px solid ${props => props.theme.colors.border};
   &:last-child {
     margin-right: 0;
   }
