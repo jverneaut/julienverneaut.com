@@ -117,7 +117,7 @@ class Hero extends Component {
           <Title>Construisons de belles choses ensemble</Title>
           <Description>
             <DescritpionParagraph>
-              Mon nom est Julien Verneaut. Je créé des sites internet ainsi que des jeux et applications pour smartphone.
+              Mon nom est Julien Verneaut. Je crée des sites internet ainsi que des jeux et applications pour smartphone.
             </DescritpionParagraph>
             <DescritpionParagraph>
               Du design à la programmation, je travaille avec vous pour réaliser vos projets les plus fous.
