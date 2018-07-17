@@ -113,8 +113,18 @@ const Header = () => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink>
-            A propos
+          <TabLink href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122">
+            <i className="fab fa-linkedin"></i>
+          </TabLink>
+        </Tab>
+        <Tab>
+          <TabLink href="mailto:jverneaut@gmail.com">
+            <i className="fas fa-envelope"></i>
+          </TabLink>
+        </Tab>
+        <Tab>
+          <TabLink href="https://github.com/jverneaut">
+            <i className="fab fa-github"></i>
           </TabLink>
         </Tab>
       </Tabs>
