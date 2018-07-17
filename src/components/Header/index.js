@@ -15,6 +15,7 @@ const HeaderContent = styled.div`
   align-items: center;
   display: flex;
   flex: 2;
+  line-height: 1.3;
   @media (max-width: ${props => props.theme.breakpoints.small}) {
     flex-direction: column;
     align-items: flex-start;
