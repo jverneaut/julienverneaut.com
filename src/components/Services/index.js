@@ -49,7 +49,7 @@ const Services = () => (
           Développement web fullstack
         </ServiceTitle>
         <ServiceDescription>
-          Description
+          De Wordpress à NodeJs, je vous aide à choisir les technologies les plus adaptées à votre projet puis à développer une solution sur mesure pour votre entreprise.
         </ServiceDescription>
       </Service>
       <Service>
@@ -57,7 +57,7 @@ const Services = () => (
           Développement mobile
         </ServiceTitle>
         <ServiceDescription>
-          Description
+          Les utilisateurs de smartphones passent en moyenne 2h par jour sur leur mobile. Profitez de ma connaissances des frameworks Corona et React Native pour conquérir ce marché en pleine expansion.
         </ServiceDescription>
       </Service>
       <Service>
@@ -65,7 +65,7 @@ const Services = () => (
           UI/UX design
         </ServiceTitle>
         <ServiceDescription>
-          Description
+          Faire bonne impression à vos utilisateurs, c'est l'assurance d'une meilleure rétention.
         </ServiceDescription>
       </Service>
     </ServicesContainer>
