@@ -69,6 +69,7 @@ const TabLink = styled.a`
   color: ${props => props.theme.colors.dark};
   opacity: 0.7;
   transition: 0.3s all;
+  cursor: pointer;
   &:hover {
     opacity: 1;
   }
@@ -88,7 +89,7 @@ const Emoji = styled.span.attrs({
   vertical-align: top;
 `;
 
-const Header = () => (
+const Header = (props) => (
   <HeaderContainer>
     <HeaderContent>
       <LogoGroup>
@@ -111,7 +112,7 @@ const Header = () => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="mailto:jverneaut@gmail.com">
+          <TabLink onClick={e => { e.preventDefault(); props.showContactForm() }}>
             <i className="fas fa-envelope"></i>
           </TabLink>
         </Tab>

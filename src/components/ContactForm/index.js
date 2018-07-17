@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const ModalBackground = styled.div`
@@ -70,18 +70,32 @@ const Link = styled.a`
   color: ${props => props.theme.colors.primary};
 `;
 
-const ContactForm = (props) => (
-  <ModalBackground onClick={props.dismissModal}>
-    <ModalContainer onClick={e => e.stopPropagation()}>
-      <Form action="https://formspree.io/jverneaut@gmail.com" method="POST">
-        <FormEmail type="text" name="email" placeholder="Votre email" required />
-        <FormMessage placeholder="Votre message" name="message" rows={4} />
-        <FormSubmit>Envoyer</FormSubmit>
-      </Form>
-      <ModalMessage>Vous pouvez également me contacter <Link href="mailto:jverneaut@gmail.com">directement par mail</Link> ou via <Link href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122">mon LinkedIn</Link>.</ModalMessage>
-    </ModalContainer>
-  </ModalBackground>
-);
+class ContactForm extends Component {
+  state = { visible: false }
+
+  showContactForm = () => { this.setState({ visible: true }) }
+
+  hideContactForm = () => { this.setState({ visible: false }) }
+
+  render() {
+    if (this.state.visible) {
+      return (
+        <ModalBackground onClick={this.hideContactForm}>
+          <ModalContainer onClick={e => e.stopPropagation()}>
+            <Form action="https://formspree.io/jverneaut@gmail.com" method="POST">
+              <FormEmail type="text" name="email" placeholder="Votre email" required />
+              <FormMessage placeholder="Votre message" name="message" rows={4} />
+              <FormSubmit>Envoyer</FormSubmit>
+            </Form>
+            <ModalMessage>Vous pouvez également me contacter <Link href="mailto:jverneaut@gmail.com">directement par mail</Link> ou via <Link href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122">mon LinkedIn</Link>.</ModalMessage>
+          </ModalContainer>
+        </ModalBackground>
+      )
+    } else {
+      return null;
+    }
+  }
+}
 
 export default ContactForm;
 

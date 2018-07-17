@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-import ContactForm from './ContactForm';
 import Portrait from './Portrait';
 
 const HeroContainer = styled.div`
@@ -92,52 +91,30 @@ const ContactBtnIcon = styled.i`
   font-size: 16px;
 `;
 
-class Hero extends Component {
-  state = {
-    modalActive: false
-  };
-
-  displayModal = (e) => {
-    e.preventDefault();
-    this.setState({
-      modalActive: true
-    })
-  }
-
-  dismissModal = (e) => {
-    this.setState({
-      modalActive: false
-    })
-  }
-
-  render() {
-    return (
-      <HeroContainer>
-        <HeroContent>
-          <Title>Construisons de belles choses ensemble</Title>
-          <Description>
-            <DescritpionParagraph>
-              Mon nom est Julien Verneaut. Je crée des sites internet ainsi que des jeux et applications pour smartphone.
-            </DescritpionParagraph>
-            <DescritpionParagraph>
-              Du design à la programmation, je travaille avec vous pour réaliser vos projets les plus fous.
-              {" "}<span role="img" aria-label="étincelles">✨</span>
-            </DescritpionParagraph>
-          </Description>
-          <ContactBtn onClick={this.displayModal}>
-            <ContactBtnIcon className="fas fa-envelope"></ContactBtnIcon>
-            Me contacter
-            </ContactBtn>
-          <ContactBtn light href="https://github.com/jverneaut">
-            <ContactBtnIcon className="fab fa-github"></ContactBtnIcon>
-            Voir mon github
-            </ContactBtn>
-        </HeroContent>
-        <Portrait />
-        {this.state.modalActive && <ContactForm dismissModal={this.dismissModal} />}
-      </HeroContainer>
-    )
-  }
-}
+const Hero = (props) => (
+  <HeroContainer>
+    <HeroContent>
+      <Title>Construisons de belles choses ensemble</Title>
+      <Description>
+        <DescritpionParagraph>
+          Mon nom est Julien Verneaut. Je crée des sites internet ainsi que des jeux et applications pour smartphone.
+        </DescritpionParagraph>
+        <DescritpionParagraph>
+          Du design à la programmation, je travaille avec vous pour réaliser vos projets les plus fous.
+          {" "}<span role="img" aria-label="étincelles">✨</span>
+        </DescritpionParagraph>
+      </Description>
+      <ContactBtn onClick={props.showContactForm}>
+        <ContactBtnIcon className="fas fa-envelope"></ContactBtnIcon>
+        Me contacter
+        </ContactBtn>
+      <ContactBtn light href="https://github.com/jverneaut">
+        <ContactBtnIcon className="fab fa-github"></ContactBtnIcon>
+        Voir mon github
+        </ContactBtn>
+    </HeroContent>
+    <Portrait />
+  </HeroContainer>
+)
 
 export default Hero;

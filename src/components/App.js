@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { injectGlobal, ThemeProvider } from 'styled-components';
 
+import ContactForm from './ContactForm';
 import Header from './Header';
 import Hero from './Hero';
 import Projects from './Projects';
@@ -36,17 +37,22 @@ injectGlobal`
   }
 `;
 
-const App = () => (
-  <ThemeProvider theme={theme}>
-    <div>
-      <Header />
-      <Hero />
-      <Technologies />
-      <Services />
-      <Projects />
-      <Skills />
-    </div>
-  </ThemeProvider>
-);
+class App extends Component {
+  render() {
+    return (
+      <ThemeProvider theme={theme}>
+        <div>
+          <ContactForm ref={(ref) => this.contactForm = ref} />
+          <Header showContactForm={() => this.contactForm.showContactForm()} />
+          <Hero showContactForm={() => this.contactForm.showContactForm()} />
+          <Technologies />
+          <Services />
+          <Projects />
+          <Skills />
+        </div>
+      </ThemeProvider>
+    )
+  }
+}
 
 export default App;
