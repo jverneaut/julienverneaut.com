@@ -108,7 +108,7 @@ const Projects = () => (
             Du design à la programmation en passant par la gestion de projet, Karo m'a permi d'aborder toutes les étapes nécéssaires à la création d'un produit.
           </ProjectParagraph>
         </ProjectDescription>
-        <a href='https://play.google.com/store/apps/details?id=com.gmail.jverneaut.verneaut&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+        <a href='https://play.google.com/store/apps/details?id=com.gmail.jverneaut.verneaut&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
           <Badge alt='Disponible sur Google Play' src={PlayStore} />
         </a>
       </ProjectContent>
@@ -121,7 +121,7 @@ const Projects = () => (
             PetitBouquin.com est un site au design épuré sur lequel je publie le résumé de livres qui m'ont particulièrement plu. Grâce à React et au framework Gatsby, il ne nécessite pas de backend. Ce projet intègre donc des services externes tels que Mailchimp et Disqus pour fonctionner.
           </ProjectParagraph>
         </ProjectDescription>
-        <ProjectLink href="https://www.petitbouquin.com">Accéder à Petit Bouquin →</ProjectLink>
+        <ProjectLink href="https://www.petitbouquin.com" target="_blank">Accéder à Petit Bouquin →</ProjectLink>
       </ProjectContent>
       <PhonePreview src={PetitB} alt="" />
     </Project>

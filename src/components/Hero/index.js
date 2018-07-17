@@ -105,11 +105,11 @@ const Hero = (props) => (
         </DescritpionParagraph>
       </Description>
       <ContactBtn onClick={props.showContactForm}>
-        <ContactBtnIcon className="fas fa-envelope"></ContactBtnIcon>
+        <ContactBtnIcon className="fas fa-envelope" />
         Me contacter
         </ContactBtn>
-      <ContactBtn light href="https://github.com/jverneaut">
-        <ContactBtnIcon className="fab fa-github"></ContactBtnIcon>
+      <ContactBtn light href="https://github.com/jverneaut" target="_blank">
+        <ContactBtnIcon className="fab fa-github" />
         Voir mon github
         </ContactBtn>
     </HeroContent>

@@ -102,18 +102,18 @@ const Header = (props) => (
       </LogoGroup>
       <Tabs>
         <Tab>
-          <TabLink href="https://github.com/jverneaut">
-            <i className="fab fa-github"></i>
+          <TabLink href="https://github.com/jverneaut" target="_blank">
+            <i className="fab fa-github" />
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122">
-            <i className="fab fa-linkedin"></i>
+          <TabLink href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122" target="_blank">
+            <i className="fab fa-linkedin" />
           </TabLink>
         </Tab>
         <Tab>
           <TabLink onClick={e => { e.preventDefault(); props.showContactForm() }}>
-            <i className="fas fa-envelope"></i>
+            <i className="fas fa-envelope" />
           </TabLink>
         </Tab>
         <Tab>

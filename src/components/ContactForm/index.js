@@ -87,7 +87,17 @@ class ContactForm extends Component {
               <FormMessage placeholder="Votre message" name="message" rows={4} />
               <FormSubmit>Envoyer</FormSubmit>
             </Form>
-            <ModalMessage>Vous pouvez également me contacter <Link href="mailto:jverneaut@gmail.com">directement par mail</Link> ou via <Link href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122">mon LinkedIn</Link>.</ModalMessage>
+            <ModalMessage>
+              Vous pouvez également me contacter{" "}
+              <Link href="mailto:jverneaut@gmail.com">
+                directement par mail{" "}
+              </Link>
+              ou via{" "}
+              <Link href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122" target="_blank">
+                mon LinkedIn
+              </Link>
+              .
+            </ModalMessage>
           </ModalContainer>
         </ModalBackground>
       )
