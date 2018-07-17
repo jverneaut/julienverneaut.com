@@ -87,8 +87,10 @@ const ProjectParagraph = styled.p`
 
 const ProjectLink = styled.a`
   display: block;
-  margin-top: 16px;
-  color: ${props => props.theme.colors.primary};
+  margin-top: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: ${props => props.theme.colors.dark};
 `;
 
 const Projects = () => (
@@ -119,7 +121,7 @@ const Projects = () => (
             PetitBouquin.com est un site au design épuré sur lequel je publie le résumé de livres qui m'ont particulièrement plu. Grâce à React et au framework Gatsby, il ne nécessite pas de backend. Ce projet intègre donc des services externes tels que Mailchimp et Disqus pour fonctionner.
           </ProjectParagraph>
         </ProjectDescription>
-        <ProjectLink href="https://www.petitbouquin.com">Accéder à Petit Bouquin</ProjectLink>
+        <ProjectLink href="https://www.petitbouquin.com">Accéder à Petit Bouquin →</ProjectLink>
       </ProjectContent>
       <PhonePreview src={PetitB} alt="" />
     </Project>
