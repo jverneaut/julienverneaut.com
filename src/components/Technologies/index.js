@@ -141,19 +141,35 @@ const Technologies = () => (
       Mes technologies favorites :
     </TechnologiesTitle>
     <TechnologiesGroup>
-      <Technology href="https://reactjs.org/" target="_blank">
+      <Technology
+        href="https://reactjs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <TechnologyImg src={ReactImg} alt="" />
         <TechnologyName>React</TechnologyName>
       </Technology>
-      <Technology href="https://nodejs.org/" target="_blank">
+      <Technology
+        href="https://nodejs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <TechnologyImg src={NodeImg} alt="" />
         <TechnologyName>Node</TechnologyName>
       </Technology>
-      <Technology href="http://expressjs.com/" target="_blank">
+      <Technology
+        href="http://expressjs.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <TechnologyImg src={ExpressImg} alt="" />
         <TechnologyName>Express</TechnologyName>
       </Technology>
-      <Technology href="https://www.mongodb.com/" target="_blank">
+      <Technology
+        href="https://www.mongodb.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <TechnologyImg src={MongoImg} alt="" />
         <TechnologyName>MongoDb</TechnologyName>
       </Technology>

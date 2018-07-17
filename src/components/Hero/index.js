@@ -108,7 +108,12 @@ const Hero = (props) => (
         <ContactBtnIcon className="fas fa-envelope" />
         Me contacter
         </ContactBtn>
-      <ContactBtn light href="https://github.com/jverneaut" target="_blank">
+      <ContactBtn
+        light
+        href="https://github.com/jverneaut"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <ContactBtnIcon className="fab fa-github" />
         Voir mon github
         </ContactBtn>

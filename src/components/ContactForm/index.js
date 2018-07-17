@@ -93,7 +93,11 @@ class ContactForm extends Component {
                 directement par mail{" "}
               </Link>
               ou via{" "}
-              <Link href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122" target="_blank">
+              <Link
+                href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 mon LinkedIn
               </Link>
               .

@@ -102,12 +102,20 @@ const Header = (props) => (
       </LogoGroup>
       <Tabs>
         <Tab>
-          <TabLink href="https://github.com/jverneaut" target="_blank">
+          <TabLink
+            href="https://github.com/jverneaut"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-github" />
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122" target="_blank">
+          <TabLink
+            href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-linkedin" />
           </TabLink>
         </Tab>
@@ -117,12 +125,20 @@ const Header = (props) => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://www.petitbouquin.com" target="_blank">
+          <TabLink
+            href="https://www.petitbouquin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Livres
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://medium.com/@jverneaut" target="_blank">
+          <TabLink
+            href="https://medium.com/@jverneaut"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Blog{" "}
             {// eslint-disable-next-line
             }<Emoji aria-label="USA flag">🇺🇸</Emoji>
