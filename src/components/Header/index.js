@@ -101,15 +101,8 @@ const Header = () => (
       </LogoGroup>
       <Tabs>
         <Tab>
-          <TabLink href="https://medium.com/@jverneaut" target="_blank">
-            Blog{" "}
-            {// eslint-disable-next-line
-            }<Emoji aria-label="USA flag">🇺🇸</Emoji>
-          </TabLink>
-        </Tab>
-        <Tab>
-          <TabLink href="https://www.petitbouquin.com" target="_blank">
-            Livres
+          <TabLink href="https://github.com/jverneaut">
+            <i className="fab fa-github"></i>
           </TabLink>
         </Tab>
         <Tab>
@@ -123,8 +116,15 @@ const Header = () => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://github.com/jverneaut">
-            <i className="fab fa-github"></i>
+          <TabLink href="https://www.petitbouquin.com" target="_blank">
+            Livres
+          </TabLink>
+        </Tab>
+        <Tab>
+          <TabLink href="https://medium.com/@jverneaut" target="_blank">
+            Blog{" "}
+            {// eslint-disable-next-line
+            }<Emoji aria-label="USA flag">🇺🇸</Emoji>
           </TabLink>
         </Tab>
       </Tabs>
