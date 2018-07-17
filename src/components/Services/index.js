@@ -57,7 +57,7 @@ const Services = () => (
           Développement mobile
         </ServiceTitle>
         <ServiceDescription>
-          Les utilisateurs de smartphones passent en moyenne 2h par jour sur leur mobile. Profitez de ma connaissances des frameworks Corona et React Native pour conquérir ce marché en pleine expansion.
+          Les utilisateurs de smartphones passent en moyenne 2h par jour sur leur mobile. Profitez de ma connaissance des frameworks Corona et React Native pour conquérir ce marché en pleine expansion.
         </ServiceDescription>
       </Service>
       <Service>
