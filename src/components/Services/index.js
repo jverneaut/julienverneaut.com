@@ -65,7 +65,7 @@ const Services = () => (
           UI/UX design
         </ServiceTitle>
         <ServiceDescription>
-          Faire bonne impression à vos utilisateurs, c'est l'assurance d'une meilleure expérience client et de plus de conversions.
+          Faire bonne impression à vos utilisateurs, c'est l'assurance d'une meilleure expérience client et de plus de conversions sur votre site.
         </ServiceDescription>
       </Service>
     </ServicesContainer>
