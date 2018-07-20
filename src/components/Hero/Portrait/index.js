@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import PortraitImg from './portrait_web.png';
+import PortraitImg from './portrait.png';
 import PortraitBackground from './background.svg';
 
 const PortraitContainer = styled.div`
