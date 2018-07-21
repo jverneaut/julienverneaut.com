@@ -63,6 +63,7 @@ const rotate360 = keyframes`
 `;
 
 const PortraitImgBackground = styled.img`
+  width: 450px;
   position: absolute;
   z-index: -1;
   top: -100px;

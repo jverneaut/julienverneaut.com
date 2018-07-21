@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="450px" height="454px" viewBox="0 0 450 454" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
-    <title>Oval-2 Copy</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop" transform="translate(-334.000000, -395.000000)" fill="#6E91FF" fill-rule="nonzero">
-            <g id="shape" transform="translate(334.000000, 395.000000)">
-                <path d="M260,454 C390.339201,454 450,313.339201 450,183 C450,52.660799 321.339201,0 191,0 C60.660799,0 0,111.660799 0,242 C0,372.339201 129.660799,454 260,454 Z" id="Oval-2-Copy"></path>
-            </g>
-        </g>
-    </g>
+<svg version="1.1" viewBox="0 0 450 454" xmlns="http://www.w3.org/2000/svg">
+<title>Oval-2 Copy</title>
+<desc>Created with Sketch.</desc>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-334 -395)" fill="#6E91FF" fill-rule="nonzero">
+<g transform="translate(334 395)">
+<path d="m260 454c130.34 0 190-140.66 190-271s-128.66-183-259-183-191 111.66-191 242 129.66 212 260 212z"/>
+</g>
+</g>
+</g>
 </svg>
