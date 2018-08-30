@@ -112,7 +112,7 @@ const Header = (props) => (
         </Tab>
         <Tab>
           <TabLink
-            href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122"
+            href="https://fr.linkedin.com/in/julien-verneaut"
             target="_blank"
             rel="noopener noreferrer"
           >
