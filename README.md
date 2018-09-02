@@ -1,3 +1,3 @@
-My personal website built using React with create-react-app and styled-components.
+My personal website built with React, Styled Components and Next.js.
 
 ![Imgur](https://i.imgur.com/pOi7Di0.png)

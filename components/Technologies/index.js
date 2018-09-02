@@ -2,11 +2,6 @@ import React from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
-import ExpressImg from './Expressjs.png';
-import NodeImg from './node.png';
-import MongoImg from './mongo.png';
-import ReactImg from './react.png';
-
 const TechnologiesContainer = styled.div`
   max-width: 960px;
   margin: 0 auto;
@@ -146,7 +141,7 @@ const Technologies = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <TechnologyImg src={ReactImg} alt="" />
+        <TechnologyImg src="/static/img/technologies/react.png" alt="" />
         <TechnologyName>React</TechnologyName>
       </Technology>
       <Technology
@@ -154,7 +149,7 @@ const Technologies = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <TechnologyImg src={NodeImg} alt="" />
+        <TechnologyImg src="/static/img/technologies/node.png" alt="" />
         <TechnologyName>Node</TechnologyName>
       </Technology>
       <Technology
@@ -162,7 +157,7 @@ const Technologies = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <TechnologyImg src={ExpressImg} alt="" />
+        <TechnologyImg src="/static/img/technologies/Expressjs.png" alt="" />
         <TechnologyName>Express</TechnologyName>
       </Technology>
       <Technology
@@ -170,7 +165,7 @@ const Technologies = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <TechnologyImg src={MongoImg} alt="" />
+        <TechnologyImg src="/static/img/technologies/mongo.png" alt="" />
         <TechnologyName>MongoDb</TechnologyName>
       </Technology>
     </TechnologiesGroup>

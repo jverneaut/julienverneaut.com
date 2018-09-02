@@ -1,9 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import PortraitImg from './portrait.png';
-import PortraitBackground from './background.svg';
-
 const PortraitContainer = styled.div`
   flex: 1;
   display: flex;
@@ -80,8 +77,8 @@ const PortraitImgBackground = styled.img`
 const Portrait = () => (
   <PortraitContainer>
     <PortraitImgContainer>
-      <PortraitImgBackground src={PortraitBackground} alt="" />
-      <PortraitImgComponent src={PortraitImg} alt="" />
+      <PortraitImgBackground src="/static/img/portrait/background.svg" alt="" />
+      <PortraitImgComponent src="/static/img/portrait/portrait.png" alt="" />
     </PortraitImgContainer>
   </PortraitContainer>
 );

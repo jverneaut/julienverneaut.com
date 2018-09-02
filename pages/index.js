@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import { injectGlobal, ThemeProvider } from 'styled-components';
 import ReactGA from 'react-ga';
 
-import ContactForm from './ContactForm';
-import Header from './Header';
-import Hero from './Hero';
-import Projects from './Projects';
-import Services from './Services';
-import Skills from './Skills';
-import Technologies from './Technologies';
+import ContactForm from './../components/ContactForm';
+import Header from './../components/Header';
+import Hero from './../components/Hero';
+import Projects from './../components/Projects';
+import Services from './../components/Services';
+import Skills from './../components/Skills';
+import Technologies from './../components/Technologies';
 
-ReactGA.initialize('UA-120978536-2');
-ReactGA.pageview('/');
+if (typeof window !== 'undefined') {
+  ReactGA.initialize('UA-120978536-2');
+  ReactGA.pageview('/');
+}
 
 const theme = {
   colors: {
@@ -41,7 +43,7 @@ injectGlobal`
   }
 `;
 
-class App extends Component {
+class Index extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
@@ -59,4 +61,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Index;
