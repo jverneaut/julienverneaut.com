@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PetitB from './PB.png';
-import Karo from './Karo.png';
-import PlayStore from './PlayStore.png';
-
 const ProjectsContainer = styled.div`
   max-width: 960px;
   margin: 0 auto;
@@ -97,7 +93,7 @@ const Projects = () => (
   <ProjectsContainer>
     <ProjectsTitle>Mes réalisations :</ProjectsTitle>
     <Project>
-      <PhonePreview src={Karo} alt="" />
+      <PhonePreview src="/static/img/projects/Karo.png" alt="" />
       <ProjectContent>
         <ProjectName>Karo</ProjectName>
         <ProjectDescription>
@@ -113,7 +109,7 @@ const Projects = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Badge alt='Disponible sur Google Play' src={PlayStore} />
+          <Badge alt='Disponible sur Google Play' src="/static/img/projects/PlayStore.png" />
         </a>
       </ProjectContent>
     </Project>
@@ -133,7 +129,7 @@ const Projects = () => (
           Accéder à Petit Bouquin →
         </ProjectLink>
       </ProjectContent>
-      <PhonePreview src={PetitB} alt="" />
+      <PhonePreview src="/static/img/projects/PB.png" alt="" />
     </Project>
   </ProjectsContainer>
 );
