@@ -50,12 +50,16 @@ const PortraitImgComponent = styled.img`
 `;
 
 const rotate360 = keyframes`
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg) scaleX(0.96) scaleY(1.03);
   }
 
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(180deg) scaleX(1.03) scaleY(0.96);
+  }
+
+  100% {
+    transform: rotate(360deg) scaleX(0.96) scaleY(1.03);
   }
 `;
 

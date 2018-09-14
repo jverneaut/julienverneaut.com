@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { ColumnLarge, ColumnSmall } from './Column';
+import Category, { Skill, Title } from './Category';
+
 const SkillsContainer = styled.div`
   max-width: 960px;
   margin: 0 auto;
@@ -12,46 +15,13 @@ const SkillsTitle = styled.h2`
   margin-bottom: 32px;
 `;
 
-const ColumnSmall = styled.div`
-  @media (max-width: ${props => props.theme.breakpoints.medium}) {
-    float: left;
-    width: 50%;
-  }
-`;
-
-const ColumnLarge = styled.div`
-  width: 25%;
-  float: left;
-  @media (max-width: ${props => props.theme.breakpoints.medium}) {
-    width: 100%;
-    float: unset;
-  }
-`;
-
-const SkillCategory = styled.ul`
-  margin-bottom: 56px;
-`;
-
-const SkillCategoryTitle = styled.li`
-  color: ${props => props.theme.colors.dark};
-  font-weight: bold;
-  margin-bottom: 24px;
-`;
-
-const Skill = styled.li`
-  color: ${props => props.theme.colors.dark};
-  opacity: 0.7;
-  margin-top: 16px;
-`;
-
-
 const Skills = () => (
   <SkillsContainer>
     <SkillsTitle>Mes compétences :</SkillsTitle>
     <ColumnSmall>
       <ColumnLarge>
-        <SkillCategory>
-          <SkillCategoryTitle>Frontend</SkillCategoryTitle>
+        <Category>
+          <Title>Frontend</Title>
           <Skill>html/css</Skill>
           <Skill>sass</Skill>
           <Skill>gulp</Skill>
@@ -65,57 +35,57 @@ const Skills = () => (
           <Skill>Bulma.css</Skill>
           <Skill>bem</Skill>
           <Skill>Wordpress</Skill>
-        </SkillCategory>
+        </Category>
       </ColumnLarge>
       <ColumnLarge>
-        <SkillCategory>
-          <SkillCategoryTitle>Backend</SkillCategoryTitle>
+        <Category>
+          <Title>Backend</Title>
           <Skill>Node.js</Skill>
           <Skill>Express</Skill>
           <Skill>MongoDB</Skill>
           <Skill>PassportJs</Skill>
           <Skill>Stripe</Skill>
           <Skill>socket.io</Skill>
-        </SkillCategory>
-        <SkillCategory>
-          <SkillCategoryTitle>Mobile</SkillCategoryTitle>
+        </Category>
+        <Category>
+          <Title>Mobile</Title>
           <Skill>React Native</Skill>
           <Skill>Corona SDK</Skill>
-        </SkillCategory>
+        </Category>
       </ColumnLarge>
     </ColumnSmall>
     <ColumnSmall>
       <ColumnLarge>
-        <SkillCategory>
-          <SkillCategoryTitle>Design</SkillCategoryTitle>
+        <Category>
+          <Title>Design</Title>
           <Skill>Photoshop/Affinity</Skill>
           <Skill>Sketch</Skill>
-        </SkillCategory>
-        <SkillCategory>
-          <SkillCategoryTitle>Analyse de données</SkillCategoryTitle>
+        </Category>
+        <Category>
+          <Title>Analyse de données</Title>
           <Skill>Python</Skill>
           <Skill>Pandas</Skill>
           <Skill>Scikit Learn</Skill>
           <Skill>Matplotlib</Skill>
           <Skill>Beatiful Soup</Skill>
           <Skill>Jupyter</Skill>
-        </SkillCategory>
+        </Category>
       </ColumnLarge>
       <ColumnLarge>
-        <SkillCategory>
-          <SkillCategoryTitle>Marketing</SkillCategoryTitle>
+        <Category>
+          <Title>Marketing</Title>
           <Skill>Buffer</Skill>
           <Skill>Google Analytics</Skill>
           <Skill>Mailchimp</Skill>
-        </SkillCategory>
-        <SkillCategory>
-          <SkillCategoryTitle>Mes petits +</SkillCategoryTitle>
+        </Category>
+        <Category>
+          <Title>Mes petits +</Title>
           <Skill>VBA</Skill>
           <Skill>OpenCv</Skill>
           <Skill>git</Skill>
           <Skill>Electron</Skill>
           <Skill>ssh</Skill>
-        </SkillCategory>
+        </Category>
       </ColumnLarge>
     </ColumnSmall>
   </SkillsContainer>

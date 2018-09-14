@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Button, { ButtonIcon } from './Button';
 import Portrait from './Portrait';
 
 const HeroContainer = styled.div`
@@ -58,39 +59,6 @@ const DescritpionParagraph = styled.p`
   }
 `;
 
-const ContactBtn = styled.a`
-  cursor: pointer;
-  text-decoration: none;
-  background-color: ${props => props.light ? 'white' : props.theme.colors.primary};
-  color: ${props => props.light ? props.theme.colors.dark : 'white'};
-  padding: 16px 24px;
-  margin-right: 16px;
-  display: inline-block;
-  border-radius: 4px;
-  margin-top: 32px;
-  box-shadow: 0 4px 16px rgba(10, 29, 66, 0.08);
-  transition: 0.3s all;
-  text-transform: uppercase;
-  font-size: 16px;
-  &:hover {
-    color: ${props => props.light ? 'white' : props.theme.colors.primary};
-    background-color: ${props => props.light ? props.theme.colors.dark : 'white'};
-  }
-  &:last-of-type {
-    margin-right: 0;
-  }
-  @media (max-width: ${props => props.theme.breakpoints.small}) {
-    &:last-of-type {
-      margin-top: 16px;
-    }
-  }
-`;
-
-const ContactBtnIcon = styled.i`
-  margin-right: 16px;
-  font-size: 16px;
-`;
-
 const Hero = (props) => (
   <HeroContainer>
     <HeroContent>
@@ -104,22 +72,17 @@ const Hero = (props) => (
           {" "}<span role="img" aria-label="étincelles">✨</span>
         </DescritpionParagraph>
       </Description>
-      <ContactBtn onClick={props.showContactForm}>
-        <ContactBtnIcon className="fas fa-envelope" />
+      <Button onClick={props.showContactForm}>
+        <ButtonIcon className="fas fa-envelope" />
         Me contacter
-        </ContactBtn>
-      <ContactBtn
-        light
-        href="https://github.com/jverneaut"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <ContactBtnIcon className="fab fa-github" />
+        </Button>
+      <Button light href="https://github.com/jverneaut">
+        <ButtonIcon className="fab fa-github" />
         Voir mon github
-        </ContactBtn>
+        </Button>
     </HeroContent>
     <Portrait />
   </HeroContainer>
-)
+);
 
 export default Hero;

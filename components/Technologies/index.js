@@ -1,6 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import styled, { keyframes } from 'styled-components';
+import DashedLine from './DashedLine';
+import Technology, { TechnologyImg, TechnologyName } from './Technology';
 
 const TechnologiesContainer = styled.div`
   max-width: 960px;
@@ -22,159 +24,30 @@ const TechnologiesGroup = styled.div`
   }
 `;
 
-const Technology = styled.a`
-  text-decoration: none;
-  background: white;
-  flex: 1;
-  display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 32px;
-  padding: 8px 0;
-  border-radius: 4px;
-  border: 1px solid ${props => props.theme.colors.border};
-  &:last-child {
-    margin-right: 0;
-  }
-  @media (max-width: ${props => props.theme.breakpoints.medium}) {
-    margin-right: 0;
-    margin-bottom: 16px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-`;
-
-const TechnologyImg = styled.img`
-  max-height: 32px;
-  max-width: 56px;
-  @media (max-width: ${props => props.theme.breakpoints.medium}) {
-    max-width: unset;
-    height: 32px;
-  }
-`;
-
-const TechnologyName = styled.span`
-  margin-left: 16px;
-  color: ${props => props.theme.colors.dark};
-`;
-
-const dash = keyframes`
-  to {
-    stroke-dashoffset: -300;
-  }
-`;
-
-
-const dashAnimHorizontal = keyframes`
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(8px);
-  }
-`;
-
-const DashedLineHorizontal = styled.svg`
-  position: absolute;
-  left: 24px;
-  right: 0;
-  width: calc(100% - 48px - 8px);
-  height: 2px;
-  top: calc(24px + 1em + 24px);
-  z-index: -1;
-  animation: ${dashAnimHorizontal} 0.5s linear infinite;
-  @media (max-width: ${props => props.theme.breakpoints.medium}) {
-    display: none;
-  }
-`;
-
-const DashedLineHorizontalPath = styled.line`
-  stroke: ${props => props.theme.colors.dark};
-  stroke-width: 2px;
-  opacity: 0.12;
-  stroke-dasharray: 4px;
-`;
-
-const dashAnimVertical = keyframes`
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(8px);
-  }
-`;
-
-const DashedLineVertical = styled.svg`
-  position: absolute;
-  left: 24px;
-  top: calc(1em + 24px);
-  left: 50%;
-  right: 0;
-  height: calc(100% - 1em - 16px - 16px);
-  width: 2px;
-  z-index: -1;
-  display: none;
-  animation: ${dashAnimVertical} 10s linear infinite;
-  @media (max-width: ${props => props.theme.breakpoints.medium}) {
-    display: unset;
-  }
-`;
-
-const DashedLineVerticalPath = styled.line`
-  stroke: ${props => props.theme.colors.dark};
-  stroke-width: 2px;
-  opacity: 0.12;
-  stroke-dasharray: 4px;
-  animation: ${dash} 20s linear infinite;
-`;
-
 const Technologies = () => (
   <TechnologiesContainer>
     <TechnologiesTitle>
       Mes technologies favorites :
     </TechnologiesTitle>
     <TechnologiesGroup>
-      <Technology
-        href="https://reactjs.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Technology href="https://reactjs.org/">
         <TechnologyImg src="/static/img/technologies/react.png" alt="" />
         <TechnologyName>React</TechnologyName>
       </Technology>
-      <Technology
-        href="https://nodejs.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Technology href="https://nodejs.org/">
         <TechnologyImg src="/static/img/technologies/node.png" alt="" />
         <TechnologyName>Node</TechnologyName>
       </Technology>
-      <Technology
-        href="http://expressjs.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Technology href="http://expressjs.com/">
         <TechnologyImg src="/static/img/technologies/Expressjs.png" alt="" />
         <TechnologyName>Express</TechnologyName>
       </Technology>
-      <Technology
-        href="https://www.mongodb.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Technology href="https://www.mongodb.com/">
         <TechnologyImg src="/static/img/technologies/mongo.png" alt="" />
         <TechnologyName>MongoDb</TechnologyName>
       </Technology>
     </TechnologiesGroup>
-    <DashedLineHorizontal>
-      <DashedLineHorizontalPath x1="0" y1="1" x2="100%" y2="1" />
-    </DashedLineHorizontal>
-    <DashedLineVertical>
-      <DashedLineVerticalPath x1="1" y1="0" x2="1" y2="100%" />
-    </DashedLineVertical>
+    <DashedLine />
   </TechnologiesContainer>
 );
 

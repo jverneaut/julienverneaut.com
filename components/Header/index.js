@@ -1,6 +1,7 @@
 import React from 'react';
-
 import styled from 'styled-components';
+
+import Menu, { Tab, TabLink } from './Menu';
 
 const HeaderContainer = styled.div`
   max-width: 960px;
@@ -22,6 +23,8 @@ const HeaderContent = styled.div`
   }
 `;
 
+const LogoGroup = styled.div``;
+
 const Logo = styled.div`
   font-weight: bold;
   font-size: 1.2em;
@@ -36,43 +39,11 @@ const Description = styled.div`
   }
 `;
 
-const LogoGroup = styled.div``;
-
-const Tabs = styled.ul`
-  position: relative;
-  &::before {
-    left: -32px;
-    position: absolute;
-    content: '—';
-    display: block;
-    color: ${props => props.theme.colors.dark};
-    opacity: 0.7;
-  }
-  @media (max-width: ${props => props.theme.breakpoints.small}) {
-    margin-top: 16px;
-    &::before {
-      display: none;
-    }
-  }
-`;
-
-const Tab = styled.li`
-  display: inline-block;
-  margin-right: 16px;
-  &:last-of-type {
-    margin-right: 0;
-  }
-`;
-
-const TabLink = styled.a`
-  text-decoration: none;
-  color: ${props => props.theme.colors.dark};
-  opacity: 0.7;
-  transition: 0.3s all;
-  cursor: pointer;
-  &:hover {
-    opacity: 1;
-  }
+const Emoji = styled.span.attrs({
+  role: 'img',
+})`
+  font-size: 0.5em;
+  vertical-align: top;
 `;
 
 const Spacer = styled.div`
@@ -82,40 +53,25 @@ const Spacer = styled.div`
   }
 `;
 
-const Emoji = styled.span.attrs({
-  role: 'img',
-})`
-  font-size: 0.5em;
-  vertical-align: top;
-`;
-
 const Header = (props) => (
   <HeaderContainer>
     <HeaderContent>
       <LogoGroup>
         <Logo>
           Julien Verneaut
-        </Logo>
+      </Logo>
         <Description>
           développeur
-        </Description>
+      </Description>
       </LogoGroup>
-      <Tabs>
+      <Menu>
         <Tab>
-          <TabLink
-            href="https://github.com/jverneaut"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <TabLink href="https://github.com/jverneaut">
             <i className="fab fa-github" />
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink
-            href="https://fr.linkedin.com/in/julien-verneaut"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <TabLink href="https://fr.linkedin.com/in/julien-verneaut">
             <i className="fab fa-linkedin" />
           </TabLink>
         </Tab>
@@ -125,26 +81,18 @@ const Header = (props) => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink
-            href="https://www.petitbouquin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <TabLink href="https://www.petitbouquin.com">
             Livres
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink
-            href="https://medium.com/@jverneaut"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <TabLink href="https://medium.com/@jverneaut">
             Blog{" "}
             {// eslint-disable-next-line
             }<Emoji aria-label="USA flag">🇺🇸</Emoji>
           </TabLink>
         </Tab>
-      </Tabs>
+      </Menu>
     </HeaderContent>
     <Spacer />
   </HeaderContainer>
