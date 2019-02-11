@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Karo from './Karo';
 import PetitBouquin from './PetitBouquin';
+import StrasBourre from './StrasBourre';
 
 const ProjectsContainer = styled.div`
   max-width: 960px;
@@ -20,6 +21,7 @@ const Projects = () => (
     <ProjectsTitle>Mes réalisations :</ProjectsTitle>
     <Karo />
     <PetitBouquin />
+    <StrasBourre />
   </ProjectsContainer>
 );
 

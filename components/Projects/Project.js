@@ -67,6 +67,7 @@ export const ProjectParagraph = styled.p`
 export const Badge = styled.img`
   height: 40px;
   margin-top: 32px;
+  margin-right: 8px;
 `;
 
 export const ProjectLink = styled.a.attrs({
