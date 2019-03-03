@@ -28,6 +28,7 @@ const Service = styled.div`
 
 const ServiceTitle = styled.h3`
   font-weight: bold;
+  line-height: 1.3;
 `;
 
 const ServiceDescription = styled.p`
@@ -46,18 +47,18 @@ const Services = () => (
       <ServicesTitle>Mes services :</ServicesTitle>
       <Service>
         <ServiceTitle>
-          Développement web fullstack
+          Développement de sites web
         </ServiceTitle>
         <ServiceDescription>
-          De Wordpress à NodeJs, je vous aide à choisir les technologies les plus adaptées à votre projet puis à développer une solution sur mesure pour votre entreprise.
+          De Wordpress à Node.Js en passant par Python, je vous aide à choisir les technologies les plus adaptées à votre projet puis à développer une solution sur mesure pour votre entreprise.
         </ServiceDescription>
       </Service>
       <Service>
         <ServiceTitle>
-          Développement mobile
+          Développement d'applications mobiles iOS/Android
         </ServiceTitle>
         <ServiceDescription>
-          Les utilisateurs de smartphones passent en moyenne 2h par jour sur leur mobile. Profitez de ma connaissance des frameworks Corona et React Native pour conquérir ce marché en pleine expansion.
+          Les utilisateurs de smartphones passent en moyenne 2h par jour sur leur mobile. Profitez de ma connaissance des frameworks React Native et Corona pour conquérir ce marché en pleine expansion.
         </ServiceDescription>
       </Service>
       <Service>

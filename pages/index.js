@@ -23,7 +23,7 @@ const theme = {
     border: 'rgba(10, 29, 66, 0.06)'
   },
   breakpoints: {
-    small: '500px',
+    small: '600px',
     medium: '800px'
   }
 }
