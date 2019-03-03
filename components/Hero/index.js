@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Button, { ButtonIcon } from './Button';
+import Disponibility from './Disponibility';
 import Portrait from './Portrait';
 
 const HeroContainer = styled.div`
@@ -72,14 +73,15 @@ const Hero = (props) => (
           {" "}<span role="img" aria-label="étincelles">✨</span>
         </DescritpionParagraph>
       </Description>
+      <Disponibility text="Actuellement disponible pour de courtes missions" />
       <Button onClick={props.showContactForm}>
         <ButtonIcon className="fas fa-envelope" />
         Me contacter
-        </Button>
+      </Button>
       <Button light href="https://github.com/jverneaut">
         <ButtonIcon className="fab fa-github" />
         Voir mon github
-        </Button>
+      </Button>
     </HeroContent>
     <Portrait />
   </HeroContainer>
