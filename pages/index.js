@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { injectGlobal, ThemeProvider } from 'styled-components';
+import Head from 'next/head'
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import ReactGA from 'react-ga';
 
 import ContactForm from './../components/ContactForm';
@@ -28,7 +29,7 @@ const theme = {
   }
 }
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -48,6 +49,9 @@ class Index extends Component {
     return (
       <ThemeProvider theme={theme}>
         <div>
+          <Head><title>Julien Verneaut | Développeur web à Strasbourg</title></Head>
+
+          <GlobalStyle />
           <ContactForm ref={(ref) => this.contactForm = ref} />
           <Header showContactForm={() => this.contactForm.showContactForm()} />
           <Hero showContactForm={() => this.contactForm.showContactForm()} />

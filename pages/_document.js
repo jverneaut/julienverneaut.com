@@ -15,7 +15,6 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta name="theme-color" content="#282c33" />
-          <title>Julien Verneaut | Développeur web à Strasbourg</title>
           <meta name="description" content="Développeur web à Strasbourg." />
 
           <link rel="stylesheet" href="/static/css/reset.css" />
