@@ -73,7 +73,7 @@ const Hero = (props) => (
           {" "}<span role="img" aria-label="étincelles">✨</span>
         </DescritpionParagraph>
       </Description>
-      <Disponibility text="Actuellement disponible pour de courtes missions" />
+      {/* <Disponibility text="Actuellement disponible pour de courtes missions" /> */}
       <Button onClick={props.showContactForm}>
         <ButtonIcon className="fas fa-envelope" />
         Me contacter
