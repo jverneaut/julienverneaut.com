@@ -39,13 +39,6 @@ const Description = styled.div`
   }
 `;
 
-const Emoji = styled.span.attrs({
-  role: 'img',
-})`
-  font-size: 0.5em;
-  vertical-align: top;
-`;
-
 const Spacer = styled.div`
   flex: 1;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
@@ -86,10 +79,8 @@ const Header = (props) => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://medium.com/@jverneaut">
-            Blog{" "}
-            {// eslint-disable-next-line
-            }<Emoji aria-label="USA flag">🇺🇸</Emoji>
+          <TabLink href="https://blog.julienverneaut.com">
+            Blog
           </TabLink>
         </Tab>
       </Menu>
