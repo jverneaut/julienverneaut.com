@@ -63,7 +63,7 @@ const DescritpionParagraph = styled.p`
 const Hero = (props) => (
   <HeroContainer>
     <HeroContent>
-      <Title>Construisons de belles choses ensemble</Title>
+      <Title>Développons de belles choses ensemble</Title>
       <Description>
         <DescritpionParagraph>
           Mon nom est Julien Verneaut. Je crée des sites internet ainsi que des jeux et applications pour smartphone.
