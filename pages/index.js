@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Head from 'next/head'
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import ReactGA from 'react-ga';
@@ -44,25 +44,27 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-class Index extends Component {
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
-        <div>
-          <Head><title>Julien Verneaut | Développeur web à Strasbourg</title></Head>
+const Index = () => {
+  const [isContactFormVisible, setContactFormVisibility] = React.useState(false);
 
-          <GlobalStyle />
-          <ContactForm ref={(ref) => this.contactForm = ref} />
-          <Header showContactForm={() => this.contactForm.showContactForm()} />
-          <Hero showContactForm={() => this.contactForm.showContactForm()} />
-          <Technologies />
-          <Services />
-          <Projects />
-          <Skills />
-        </div>
-      </ThemeProvider>
-    )
-  }
+  return (
+    <ThemeProvider theme={theme}>
+      <div>
+        <Head><title>Julien Verneaut | Développeur web à Strasbourg</title></Head>
+
+        <GlobalStyle />
+        <ContactForm
+          visible={isContactFormVisible}
+          hideContactForm={() => setContactFormVisibility(false)} />
+        <Header showContactForm={() => setContactFormVisibility(true)} />
+        <Hero showContactForm={() => setContactFormVisibility(true)} />
+        <Technologies />
+        <Services />
+        <Projects />
+        <Skills />
+      </div>
+    </ThemeProvider>
+  )
 }
 
 export default Index;
