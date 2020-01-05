@@ -74,11 +74,6 @@ const Header = (props) => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://www.petitbouquin.com">
-            Livres
-          </TabLink>
-        </Tab>
-        <Tab>
           <TabLink href="https://blog.julienverneaut.com">
             Blog
           </TabLink>

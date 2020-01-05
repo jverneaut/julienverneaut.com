@@ -8,7 +8,7 @@ import Header from './../components/Header';
 import Hero from './../components/Hero';
 import Projects from './../components/Projects';
 import Services from './../components/Services';
-import Skills from './../components/Skills';
+// import Skills from './../components/Skills';
 import Technologies from './../components/Technologies';
 
 if (typeof window !== 'undefined') {
@@ -61,7 +61,7 @@ const Index = () => {
         <Technologies />
         <Services />
         <Projects />
-        <Skills />
+        {/* <Skills /> */}
       </div>
     </ThemeProvider>
   )
