@@ -54,7 +54,7 @@ const Header = (props) => (
           Julien Verneaut
       </Logo>
         <Description>
-          Développeur fullstack à Strasbourg
+          Développeur web à Strasbourg
       </Description>
       </LogoGroup>
       <Menu>
