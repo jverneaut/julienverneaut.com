@@ -21,7 +21,7 @@ class StrasBourre extends Component {
           <ProjectName>StrasBourre</ProjectName>
           <ProjectDescription>
             <ProjectParagraph>
-              StrasBourre est un jeu à boire hyperlocal destiné à animer les soirées strasbourgeoises. La semaine de sa sortie, il se classe dans les Top 100 nouveautés jeux Android et Top 100 jeux de société Apple. Il totalise aujourd'hui plus de 5 000 téléchargements.
+              StrasBourre est un jeu à boire hyperlocal destiné à animer les soirées strasbourgeoises. La semaine de sa sortie, il se classe dans le Top 100 nouveautés jeux Android et le Top 100 jeux de société Apple. Il totalise aujourd'hui près de 10 000 téléchargements.
             </ProjectParagraph>
             <ProjectParagraph>
               Réalisé en duo, ce jeu nous a permis d'explorer différentes facettes du marketing et de la communication en plus de l'aspect technique du projet (interface admin + API Node.js, application React Native).
