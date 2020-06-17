@@ -22,6 +22,8 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           {this.props.styleTags}
+
+          <script type="text/javascript" dangerouslySetInnerHTML={{__html: 'window.$crisp=[];window.CRISP_WEBSITE_ID="a88d9f80-4244-485e-9d1c-ea2f6050d643";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();'}} />
         </Head>
         <body>
           <Main />
