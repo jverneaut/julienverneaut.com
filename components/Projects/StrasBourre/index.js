@@ -16,7 +16,7 @@ class StrasBourre extends Component {
   render() {
     return (
       <Project>
-        <a href="http://www.strasbourre.fr">
+        <a href="http://www.strasbourre.fr" target="_blank">
           <PhonePreview src="/static/img/projects/strasbourre-screen.png" alt="" />
         </a>
         <ProjectContent>

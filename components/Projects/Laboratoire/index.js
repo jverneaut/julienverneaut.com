@@ -25,9 +25,9 @@ const Laboratoire = () => (
           </span>
         </ProjectParagraph>
       </ProjectDescription>
-      <ProjectLink href="http://lab.julienvernaut.com">Accéder au site →</ProjectLink>
+      <ProjectLink href="http://lab.julienverneaut.com">Accéder au site →</ProjectLink>
     </ProjectContent>
-    <a href="http://lab.julienvernaut.com">
+    <a href="http://lab.julienverneaut.com" target="_blank">
       <PhonePreview src="/static/img/projects/lab.png" alt="" />
     </a>
   </Project>

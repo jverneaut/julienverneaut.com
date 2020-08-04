@@ -29,7 +29,7 @@ class PetitBouquin extends Component {
             Accéder à Petit Bouquin →
           </ProjectLink>
         </ProjectContent>
-        <a href="https://www.petitbouquin.com">
+        <a href="https://www.petitbouquin.com" target="_blank">
           <PhonePreview src="/static/img/projects/PB.png" alt="" />
         </a>
       </Project>
