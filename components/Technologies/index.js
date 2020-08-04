@@ -26,9 +26,7 @@ const TechnologiesGroup = styled.div`
 
 const Technologies = () => (
   <TechnologiesContainer>
-    <TechnologiesTitle>
-      Mes technologies favorites :
-    </TechnologiesTitle>
+    <TechnologiesTitle>Mes technologies favorites :</TechnologiesTitle>
     <TechnologiesGroup>
       <Technology href="https://reactjs.org/">
         <TechnologyImg src="/static/img/technologies/react.png" alt="" />
@@ -36,15 +34,15 @@ const Technologies = () => (
       </Technology>
       <Technology href="https://nodejs.org/">
         <TechnologyImg src="/static/img/technologies/node.png" alt="" />
-        <TechnologyName>Node</TechnologyName>
+        <TechnologyName>node.js</TechnologyName>
       </Technology>
-      <Technology href="http://expressjs.com/">
-        <TechnologyImg src="/static/img/technologies/Expressjs.png" alt="" />
-        <TechnologyName>Express</TechnologyName>
+      <Technology href="https://webpack.js.org/">
+        <TechnologyImg src="/static/img/technologies/webpack.svg" alt="" />
+        <TechnologyName>Webpack</TechnologyName>
       </Technology>
-      <Technology href="https://www.mongodb.com/">
-        <TechnologyImg src="/static/img/technologies/mongo.png" alt="" />
-        <TechnologyName>MongoDb</TechnologyName>
+      <Technology href="https://wordpress.org/">
+        <TechnologyImg src="/static/img/technologies/wp.svg" alt="" />
+        <TechnologyName>WordPress</TechnologyName>
       </Technology>
     </TechnologiesGroup>
     <DashedLine />

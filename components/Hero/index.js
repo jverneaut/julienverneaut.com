@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Button, { ButtonIcon } from './Button';
-import Disponibility from './Disponibility';
+import Availability from './Availability';
 import Portrait from './Portrait';
 
 const HeroContainer = styled.div`
@@ -29,7 +29,7 @@ const HeroContent = styled.div`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 16px;
@@ -60,20 +60,24 @@ const DescritpionParagraph = styled.p`
   }
 `;
 
-const Hero = (props) => (
+const Hero = props => (
   <HeroContainer>
     <HeroContent>
       <Title>Développons de belles choses ensemble</Title>
       <Description>
         <DescritpionParagraph>
-          Mon nom est Julien Verneaut. Je crée des sites internet ainsi que des jeux et applications pour smartphone.
+          Mon nom est Julien Verneaut. Je crée des sites internet ainsi que des jeux et
+          applications pour smartphone.
         </DescritpionParagraph>
         <DescritpionParagraph>
-          Du design à la programmation, je travaille avec vous pour réaliser vos projets les plus fous.
-          {" "}<span role="img" aria-label="étincelles">✨</span>
+          Du design à la programmation, je travaille avec vous pour réaliser vos projets les
+          plus fous.{' '}
+          <span role="img" aria-label="étincelles">
+            ✨
+          </span>
         </DescritpionParagraph>
       </Description>
-      {/* <Disponibility text="Actuellement disponible pour de courtes missions" /> */}
+      <Availability text="Actuellement disponible pour des missions de durée inférieure à 1 mois" />
       <Button onClick={props.showContactForm}>
         <ButtonIcon className="fas fa-envelope" />
         Me contacter

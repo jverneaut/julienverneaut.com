@@ -28,7 +28,7 @@ export const Tab = styled.li`
 
 export const TabLink = styled.a.attrs({
   target: '_blank',
-  rel: 'noopener noreferrer'
+  rel: 'noopener noreferrer',
 })`
   text-decoration: none;
   color: ${props => props.theme.colors.dark};

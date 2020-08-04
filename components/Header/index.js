@@ -32,7 +32,7 @@ const Logo = styled.div`
   }
 `;
 
-const Description = styled.div`
+const Description = styled.h1`
   opacity: 0.7;
   @media (max-width: ${props => props.theme.breakpoints.small}) {
     display: none;
@@ -46,16 +46,12 @@ const Spacer = styled.div`
   }
 `;
 
-const Header = (props) => (
+const Header = props => (
   <HeaderContainer>
     <HeaderContent>
       <LogoGroup>
-        <Logo>
-          Julien Verneaut
-      </Logo>
-        <Description>
-          Développeur web à Strasbourg
-      </Description>
+        <Logo>Julien Verneaut</Logo>
+        <Description>Développeur web à Strasbourg</Description>
       </LogoGroup>
       <Menu>
         <Tab>
@@ -69,14 +65,17 @@ const Header = (props) => (
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink onClick={e => { e.preventDefault(); props.showContactForm() }}>
+          <TabLink
+            onClick={e => {
+              e.preventDefault();
+              props.showContactForm();
+            }}
+          >
             <i className="fas fa-envelope" />
           </TabLink>
         </Tab>
         <Tab>
-          <TabLink href="https://blog.julienverneaut.com">
-            Blog
-          </TabLink>
+          <TabLink href="https://blog.julienverneaut.com">Blog</TabLink>
         </Tab>
       </Menu>
     </HeaderContent>

@@ -34,7 +34,11 @@ const ServiceTitle = styled.h3`
 const ServiceDescription = styled.p`
   margin-top: 8px;
   line-height: 1.5;
-  opacity: 0.7;
+  color: ${props => props.theme.colors.body};
+
+  strong {
+    color: ${props => props.theme.colors.dark};
+  }
 `;
 
 const ServicesTitle = styled.h4`
@@ -46,27 +50,27 @@ const Services = () => (
     <ServicesContainer>
       <ServicesTitle>Mes services :</ServicesTitle>
       <Service>
-        <ServiceTitle>
-          Développement de sites web
-        </ServiceTitle>
+        <ServiceTitle>Développement WordPress & WooCommerce</ServiceTitle>
         <ServiceDescription>
-          De Wordpress à Node.Js en passant par Python, je vous aide à choisir les technologies les plus adaptées à votre projet puis à développer une solution sur mesure pour votre entreprise.
+          Parce qu'il alimente plus de 35% du web, WordPress est la solution pragmatique pour la
+          création de sites web stables et évolutifs.
+        </ServiceDescription>
+        <ServiceDescription>
+          Ce service inclut le <strong>développement de thèmes et de plugins</strong> dans les
+          règles de l'art, la maintenance ainsi que le déploiement de votre projet sur une
+          infrastructure de type cloud selon vos besoins.
         </ServiceDescription>
       </Service>
       <Service>
-        <ServiceTitle>
-          Développement d'applications mobiles iOS/Android
-        </ServiceTitle>
+        <ServiceTitle>Création d'applications web interactives</ServiceTitle>
         <ServiceDescription>
-          Les utilisateurs de smartphones passent en moyenne 2h par jour sur leur mobile. Profitez de ma connaissance des frameworks React Native et Corona pour conquérir ce marché en pleine expansion.
+          Parce que le web d'aujourd'hui ce n'est pas le web d'il y a 10 ans, vos clients
+          attendent plus de votre site internet que du simple contenu figé dans le temps.
         </ServiceDescription>
-      </Service>
-      <Service>
-        <ServiceTitle>
-          UI/UX design
-        </ServiceTitle>
         <ServiceDescription>
-          Faire bonne impression à vos utilisateurs, c'est l'assurance d'une meilleure expérience client et de plus de conversions sur votre site.
+          Distinguez-vous en intégrant à votre site{' '}
+          <strong>un calculateur de prix, un simulateur en 3D ou même un mini-jeu</strong> pour
+          diminuer votre taux de rebond et fidéliser vos visiteurs.
         </ServiceDescription>
       </Service>
     </ServicesContainer>

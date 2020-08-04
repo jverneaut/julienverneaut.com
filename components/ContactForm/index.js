@@ -70,8 +70,8 @@ const Link = styled.a`
   color: ${props => props.theme.colors.primary};
 `;
 
-const ContactForm = ({ visible, hideContactForm }) => (
-  visible ?
+const ContactForm = ({ visible, hideContactForm }) =>
+  visible ? (
     <ModalBackground onClick={hideContactForm}>
       <ModalContainer onClick={e => e.stopPropagation()}>
         <Form action="https://formspree.io/jverneaut@gmail.com" method="POST">
@@ -80,22 +80,20 @@ const ContactForm = ({ visible, hideContactForm }) => (
           <FormSubmit>Envoyer</FormSubmit>
         </Form>
         <ModalMessage>
-          Vous pouvez également me contacter{" "}
-          <Link href="mailto:jverneaut@gmail.com">
-            directement par mail{" "}
-          </Link>
-          ou via{" "}
+          Vous pouvez également me contacter{' '}
+          <Link href="mailto:jverneaut@gmail.com">directement par mail </Link>
+          ou via{' '}
           <Link
             href="https://fr.linkedin.com/in/julien-verneaut"
             target="_blank"
             rel="noopener noreferrer"
           >
             mon LinkedIn
-              </Link>
+          </Link>
           .
-            </ModalMessage>
+        </ModalMessage>
       </ModalContainer>
-    </ModalBackground> : null
-)
+    </ModalBackground>
+  ) : null;
 
 export default ContactForm;

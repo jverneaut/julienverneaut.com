@@ -48,13 +48,11 @@ const Text = styled.div`
   opacity: 0.7;
 `;
 
-const Disponibility = ({ text }) => (
+const Availability = ({ text }) => (
   <Container>
     <Indicator />
-    <Text>
-      {text}
-    </Text>
+    <Text>{text}</Text>
   </Container>
 );
 
-export default Disponibility;
+export default Availability;

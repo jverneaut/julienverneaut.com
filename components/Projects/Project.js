@@ -14,8 +14,8 @@ export default styled.div`
 `;
 
 export const ProjectContent = styled.div`
-  margin-right: ${props => props.left ? '80px' : '0'};
-  margin-left: ${props => props.left ? '0' : '80px'};
+  margin-right: ${props => (props.left ? '80px' : '0')};
+  margin-left: ${props => (props.left ? '0' : '80px')};
   flex: 1;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     margin-left: 0;
@@ -40,12 +40,16 @@ export const ProjectName = styled.h3`
 `;
 
 export const ProjectDescription = styled.div`
-  opacity: 0.7;
+  color: ${props => props.theme.colors.body};
   margin-top: 32px;
   line-height: 1.5;
   display: flex;
   @media (max-width: ${props => props.theme.breakpoints.medium}) {
     flex-direction: column;
+  }
+  strong {
+    font-size: 0.7em;
+    color: ${props => props.theme.colors.dark};
   }
 `;
 
@@ -62,17 +66,22 @@ export const ProjectParagraph = styled.p`
   &:last-child {
     margin-right: 0;
   }
+
+  em {
+    font-style: italic;
+  }
 `;
 
 export const Badge = styled.img`
   height: 40px;
   margin-top: 32px;
   margin-right: 8px;
+  opacity: ${props => (props.disabled ? '0.2' : '1')};
 `;
 
 export const ProjectLink = styled.a.attrs({
   target: '_blank',
-  rel: 'noopener noreferrer'
+  rel: 'noopener noreferrer',
 })`
   display: block;
   margin-top: 24px;

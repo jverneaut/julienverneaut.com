@@ -93,7 +93,7 @@ class Skills extends Component {
           </ColumnLarge>
         </ColumnSmall>
       </SkillsContainer>
-    )
+    );
   }
 }
 

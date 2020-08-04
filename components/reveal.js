@@ -15,7 +15,7 @@ export default function reveal(WrappedComponent) {
     }
 
     render() {
-      return <WrappedComponent ref={c => this.component = c} {...this.props} />;
+      return <WrappedComponent ref={c => (this.component = c)} {...this.props} />;
     }
   };
 }

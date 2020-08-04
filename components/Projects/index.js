@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Karo from './Karo';
 import PetitBouquin from './PetitBouquin';
 import StrasBourre from './StrasBourre';
+import Laboratoire from './Laboratoire';
 
 const ProjectsContainer = styled.div`
   max-width: 960px;
@@ -18,10 +19,11 @@ const ProjectsTitle = styled.h2`
 
 const Projects = () => (
   <ProjectsContainer>
-    <ProjectsTitle>Mes réalisations :</ProjectsTitle>
-    <Karo />
-    <PetitBouquin />
+    <ProjectsTitle>Quelques-uns de mes projets :</ProjectsTitle>
+    <Laboratoire />
     <StrasBourre />
+    <PetitBouquin />
+    <Karo />
   </ProjectsContainer>
 );
 

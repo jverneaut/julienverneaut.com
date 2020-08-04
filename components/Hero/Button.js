@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export default styled.a.attrs({
   target: '_blank',
-  rel: 'noopener noreferrer'
+  rel: 'noopener noreferrer',
 })`
   cursor: pointer;
   text-decoration: none;
-  background-color: ${props => props.light ? 'white' : props.theme.colors.primary};
-  color: ${props => props.light ? props.theme.colors.dark : 'white'};
+  background-color: ${props => (props.light ? 'white' : props.theme.colors.primary)};
+  color: ${props => (props.light ? props.theme.colors.dark : 'white')};
   padding: 16px 24px;
   margin-right: 16px;
   display: inline-block;
@@ -18,8 +18,8 @@ export default styled.a.attrs({
   text-transform: uppercase;
   font-size: 16px;
   &:hover {
-    color: ${props => props.light ? 'white' : props.theme.colors.primary};
-    background-color: ${props => props.light ? props.theme.colors.dark : 'white'};
+    color: ${props => (props.light ? 'white' : props.theme.colors.primary)};
+    background-color: ${props => (props.light ? props.theme.colors.dark : 'white')};
   }
   &:last-of-type {
     margin-right: 0;

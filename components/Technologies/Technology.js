@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.a.attrs({
   target: '_blank',
-  rel: 'noopener noreferrer'
+  rel: 'noopener noreferrer',
 })`
   text-decoration: none;
   background: white;

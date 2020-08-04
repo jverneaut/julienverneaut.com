@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import ReactGA from 'react-ga';
 
@@ -8,7 +8,6 @@ import Header from './../components/Header';
 import Hero from './../components/Hero';
 import Projects from './../components/Projects';
 import Services from './../components/Services';
-// import Skills from './../components/Skills';
 import Technologies from './../components/Technologies';
 
 if (typeof window !== 'undefined') {
@@ -20,14 +19,15 @@ const theme = {
   colors: {
     light: '#f7f8fb',
     dark: '#0a1d42',
+    body: '#56637d',
     primary: '#6d91ff',
-    border: 'rgba(10, 29, 66, 0.06)'
+    border: 'rgba(10, 29, 66, 0.06)',
   },
   breakpoints: {
     small: '600px',
-    medium: '800px'
-  }
-}
+    medium: '800px',
+  },
+};
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -50,12 +50,15 @@ const Index = () => {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Head><title>Julien Verneaut | Développeur web à Strasbourg</title></Head>
+        <Head>
+          <title>Julien Verneaut | Développeur web à Strasbourg</title>
+        </Head>
 
         <GlobalStyle />
         <ContactForm
           visible={isContactFormVisible}
-          hideContactForm={() => setContactFormVisibility(false)} />
+          hideContactForm={() => setContactFormVisibility(false)}
+        />
         <Header showContactForm={() => setContactFormVisibility(true)} />
         <Hero showContactForm={() => setContactFormVisibility(true)} />
         <Technologies />
@@ -64,7 +67,7 @@ const Index = () => {
         {/* <Skills /> */}
       </div>
     </ThemeProvider>
-  )
-}
+  );
+};
 
 export default Index;
